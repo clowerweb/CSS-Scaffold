@@ -35,6 +35,14 @@ Template: enfold
         --font-weight-normal: normal;
         --font-weight-bold: 700;
         --font-weight-bolder: 900;
+
+        /** font families **/
+        --primary-font: "Maven Pro", sans-serif;
+
+        /** border **/
+        --bw-lg: .222rem;
+        --bw-md: .111rem;
+        --bw-sm: 1px;
     }
     /** end variables **/
 
@@ -51,7 +59,7 @@ Template: enfold
     body,
     body.helvetica_neue {
         color: var(--black);
-        font-family: "Maven Pro", sans-serif !important;
+        font-family: var(--primary-font) !important;
         font-optical-sizing: auto;
         font-size: var(--mobile-font-size) !important;
     }
@@ -73,7 +81,7 @@ Template: enfold
     .av-current-sort-title,
     .html_elegant-blog #top .minor-meta,
     #av-burger-menu-ul li {
-        font-family: "Maven Pro", sans-serif !important;
+        font-family: var(--primary-font) !important;
         font-weight: 700 !important;
         text-transform: none !important;
     }
@@ -192,63 +200,63 @@ Template: enfold
 
     /** borders **/
     .b-primary {
-        border: .222rem solid var(--primary-color) !important;
+        border: var(--bw-lg) solid var(--primary-color) !important;
     }
 
     .bx-primary {
-        border-left: .222rem solid var(--primary-color) !important;
-        border-right: .222rem solid var(--primary-color) !important;
+        border-left: var(--bw-lg) solid var(--primary-color) !important;
+        border-right: var(--bw-lg) solid var(--primary-color) !important;
     }
 
     .by-primary {
-        border-bottom: .222rem solid var(--primary-color) !important;
-        border-top: .222rem solid var(--primary-color) !important;
+        border-bottom: var(--bw-lg) solid var(--primary-color) !important;
+        border-top: var(--bw-lg) solid var(--primary-color) !important;
     }
 
     .bb-primary {
-        border-bottom: .222rem solid var(--primary-color) !important;
+        border-bottom: var(--bw-lg) solid var(--primary-color) !important;
     }
 
     .bl-primary {
-        border-left: .222rem solid var(--primary-color) !important;
+        border-left: var(--bw-lg) solid var(--primary-color) !important;
     }
 
     .br-primary {
-        border-right: .222rem solid var(--primary-color) !important;
+        border-right: var(--bw-lg) solid var(--primary-color) !important;
     }
 
     .bt-primary {
-        border-top: .222rem solid var(--primary-color) !important;
+        border-top: var(--bw-lg) solid var(--primary-color) !important;
     }
 
     .b-secondary {
-        border: .222rem solid var(--secondary-color) !important;
+        border: var(--bw-lg) solid var(--secondary-color) !important;
     }
 
     .bx-secondary {
-        border-left: .222rem solid var(--secondary-color) !important;
-        border-right: .222rem solid var(--secondary-color) !important;
+        border-left: var(--bw-lg) solid var(--secondary-color) !important;
+        border-right: var(--bw-lg) solid var(--secondary-color) !important;
     }
 
     .by-secondary {
-        border-bottom: .222rem solid var(--secondary-color) !important;
-        border-top: .222rem solid var(--secondary-color) !important;
+        border-bottom: var(--bw-lg) solid var(--secondary-color) !important;
+        border-top: var(--bw-lg) solid var(--secondary-color) !important;
     }
 
     .bb-secondary {
-        border-bottom: .222rem solid var(--secondary-color) !important;
+        border-bottom: var(--bw-lg) solid var(--secondary-color) !important;
     }
 
     .bl-secondary {
-        border-left: .222rem solid var(--secondary-color) !important;
+        border-left: var(--bw-lg) solid var(--secondary-color) !important;
     }
 
     .br-secondary {
-        border-right: .222rem solid var(--secondary-color) !important;
+        border-right: var(--bw-lg) solid var(--secondary-color) !important;
     }
 
     .bt-secondary {
-        border-top: .222rem solid var(--secondary-color) !important;
+        border-top: var(--bw-lg) solid var(--secondary-color) !important;
     }
     /** end borders **/
 
@@ -1216,20 +1224,19 @@ Template: enfold
     /** end padding **/
 
     /** containers **/
-    .background-multiply {
-        mix-blend-mode: multiply !important;
-    }
-
+    .display-block,
     .block {
         clear: none !important;
         display: block !important;
         float: none !important;
     }
 
+    .display-inline,
     .inline {
         display: inline !important;
     }
 
+    .display-inline-block,
     .inline-block {
         display: inline-block !important;
     }
@@ -1238,10 +1245,12 @@ Template: enfold
         display: none !important;
     }
 
+    .display-grid,
     .grid {
         display: grid;
     }
 
+    .display-flex,
     .flex {
         display: flex;
     }
