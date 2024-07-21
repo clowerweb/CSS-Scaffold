@@ -1,0 +1,37 @@
+# Library files #
+######################
+vendor
+vendor/*
+dist
+dist/*
+
+# IDE files #
+######################
+.idea
+.idea/*
+.vscode
+.vscode/*
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Misc files #
+######################
+.env
+.htaccess
+.htpasswd
+wp-config.php
+*.log
+*.exe
+*.dmg
+
+# Example themes #
+######################
+/wp-content/themes/twenty*/
